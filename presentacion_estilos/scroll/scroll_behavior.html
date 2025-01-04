@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Breve descripción de la página">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollbar Behavior</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth; /* Permite un comportamiento lento al hacer scroll */
+        }
+
+        body {
+            background: #f2f2f2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            background: purple;
+            height: 50%;
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav a {
+            margin: 0 80px;
+            line-height: 15px;
+            color: white;
+            text-decoration: none;
+        }
+
+        article {
+            width: 50%;
+            margin: 80px auto;
+            padding: 24px;
+            border: 3.5px solid rgb(10, 157, 120);
+            border-radius: 9px;
+        }
+
+        article h1 {
+            font-size: 35px;
+        }
+
+        article p {
+            line-height: 27px;
+            font-size: 18px;
+        }
+
+        article button {
+            padding: 15px;
+            text-transform: uppercase;
+            border-radius: 12px;
+            background: rgb(170, 47, 170);
+            color: white; 
+            margin: 20px 0;
+            font-size: 14px;
+            font-weight: 555;
+            width: 150px;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#art1">Articulo 1</a>
+        <a href="#art2">Articulo 2</a>
+        <a href="#art3">Articulo 3</a>
+        <a href="#art4">Articulo 4</a>
+    </nav>
+
+    <article id="art1">
+        <h1>Fashion</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sed magnam porro neque esse eos dolor pariatur odit molestiae reiciendis possimus officiis tempore dolorum quasi, facilis tempora. Labore, iure odio.</p>
+        <button>Click Me</button>
+    </article>
+
+    <article id="art2">\
+        <h1>Food & Beverage</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sed magnam porro neque esse eos dolor pariatur odit molestiae reiciendis possimus officiis tempore dolorum quasi, facilis tempora. Labore, iure odio.</p>
+        <button>Click Me</button>
+    </article>
+
+    <article id="art3">
+        <h1>Artificial Intelligence (AI)</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sed magnam porro neque esse eos dolor pariatur odit molestiae reiciendis possimus officiis tempore dolorum quasi, facilis tempora. Labore, iure odio.</p>
+        <button>Click Me</button>
+    </article>
+
+    <article id="art4">
+        <h1>Startups</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sed magnam porro neque esse eos dolor pariatur odit molestiae reiciendis possimus officiis tempore dolorum quasi, facilis tempora. Labore, iure odio.</p>
+        <button>Click Me</button>
+    </article>
+</body>
