@@ -1,0 +1,13 @@
+div {
+  width: 200px;
+  height: 200px;
+  border: 3px solid black;
+  margin: 100px auto;
+}
+
+img {
+  width: 100%; /* This makes the image take up the full width of the div */
+  height: 100%;
+  object-fit: cover; /* This makes the image fill the div, while maintaining its aspect ratio */
+  object-position: left top; /* This centers the image within the div */
+}
