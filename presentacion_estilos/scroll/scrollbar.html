@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Breve descripción de la página">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollbar exercise!</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f2f2f2;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 4px;
+            overflow: auto;
+        }
+
+        .container h1 {
+            font-size: 38px;
+            font-weight: 600;
+            color: #000;
+        }
+
+        .container hr {
+            background: #00a2ff; 
+            width: 57%;
+            height: 5px;
+            border: none; 
+            margin: 20px 0;
+        }
+
+        p {
+            margin-bottom: 20px;
+            line-height: 28px;
+            font-size: 15px;
+            color: #414141;
+        }
+
+        /* SCROLLBAR STYLE */
+
+        /* Aplicar estilo al fondo del scrollbar */
+        body::-webkit-scrollbar {
+            width: 10px;
+            background: rgba(128, 128, 128, 0.27)
+        }
+
+         /* Aplicar estilo a bar que permite hacer scroll*/
+        body::-webkit-scrollbar-thumb {
+            background: #414141;
+        }
+
+        .container::-webkit-scrollbar {
+            width: 7px;
+        }
+
+        .container::-webkit-scrollbar-thumb {
+            background: rgb(29, 140, 155);
+            border-radius: 5px;
+
+        }
+
+        /* Usa * para aplicar estilos a todos los elementos con la clase o el ID  */
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Scrollbar</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sed magnam porro neque esse eos dolor pariatur odit molestiae reiciendis possimus officiis tempore dolorum quasi, facilis tempora. Labore, iure odio.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti odio quas cumque laborum suscipit optio fugit commodi, culpa, expedita praesentium tenetur exercitationem eveniet voluptatum vero corporis quaerat sit quibusdam sed!Lorem ipsum dolor sit amet consectetur adipisicing elit, 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eligendi blanditiis suscipit, doloremque soluta fugiat repellat, fugit porro atque, ipsam amet! Temporibus, modi accusantium necessitatibus dolorum tempora ducimus rem repudiandae. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti odio quas cumque laborum suscipit optio fugit commodi, culpa, expedita praesentium tenetur exercitationem eveniet voluptatum vero corporis quaerat sit quibusdam sed!Lorem ipsum dolor sit amet consectetur adipisicing elit, 
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor eligendi blanditiis suscipit, doloremque soluta fugiat repellat, fugit porro atque, ipsam amet! Temporibus, modi accusantium necessitatibus dolorum tempora ducimus rem repudiandae.</p>
+    </div>
+</body>
