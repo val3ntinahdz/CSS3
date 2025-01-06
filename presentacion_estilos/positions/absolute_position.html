@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Breve descripción de la página">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Attributes</title>
+    <style>
+        /* Position: absolute; --> With this property, elements are placed based on the parent container and can be manipulated as long as the parent container has a relative position. */
+
+
+
+        div {
+            width: 600px;
+            height: 600px;
+            background: rgb(149, 148, 148);
+            margin: auto;
+            position: relative;
+        }
+       
+        div.box {
+            background: violet;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+
+            position: absolute;
+            top: 20px;
+            right: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
