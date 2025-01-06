@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Breve descripción de la página">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrollbar Behavior</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            background: rgb(115, 67, 220);
+            margin: 50px auto;
+            border: 1px solid black;
+
+            /* Vertical display */
+            display: block;
+
+            /* Horizontal-line display - It ignores the width and height */
+            /* They adapt to the content they have inside */
+            display: inline;
+
+            /* Doesn't ignore the width and height */
+            display: inline-block;
+
+            /* Lists */
+            display: list-item;
+
+            /* The cell in a table. It is the behavior of tags like <th> and <td> */
+            display: table-cell;
+
+            /* The row in a table. It is the behavior of tags like <tr> */
+            display: table-row;
+
+            /* Hide elements */
+            display: none; /* Doesn't save the space of the element */
+            visibility: hidden; /* Respects the space that the element occupied */
+        }
+       
+    </style>
+</head>
+<body>
+    <div>#1</div>
+    <div>#2</div>
+    <div style="display: none;">#3</div>
+    <div>#4</div>
+</body>
