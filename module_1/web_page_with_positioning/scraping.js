@@ -1,10 +1,12 @@
-const API_KEY = '2Rnnw8BSOsSZE0fqABbjCGe8pSsDoiqq';
-const listName = 'hardcover-fiction';
+require('dotenv').config();
+
+const API_KEY = process.env.NYT_API_KEY;
+const API_URL = "https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json"
 booksContainer = document.getElementById('books-container')
 
 async function fetchBestSellers () {
     try { 
-        const response = await fetch(`https://api.nytimes.com/svc/books/v3/lists/current/hardcover-fiction.json?api-key=${API_KEY}`);
+        const response = await fetch(`${API_URL}?api-key=${API_KEY}`);
         const data = await response.json();
         console.log(data);
         const books = data.results.books;
@@ -21,7 +23,7 @@ async function fetchBestSellers () {
             `;
             booksContainer.appendChild(bookDiv);
         });
-        
+
     } catch (error) {
         console.error('Error fetching the best sellers:', error);
         booksContainer.innerHTML = '<p>Failed to load the best sellers. Please try again later!</p>';
