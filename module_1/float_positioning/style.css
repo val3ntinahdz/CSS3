@@ -1,0 +1,30 @@
+/* For more info about the properties used to make an element 'float' its position, i recommend the following docs: */
+/* https://www.w3schools.com/css/css_float.asp */
+/* Float positioning -> https://developer.mozilla.org/en-US/docs/Web/CSS/float */
+/* Shape-outside property -> https://css-tricks.com/almanac/properties/s/shape-outside/ */
+/* Clear property -> https://stackoverflow.com/questions/34542218/how-to-explain-css-clear-property */
+
+div {
+    width: 50%;
+    padding: 20px;
+    margin: 20px auto;
+    border: 4px solid #ccc;
+    border-radius: 5px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 20px;
+    /* Floats the image to the right, allowing the text to wrap around it */
+    float: right;
+    border-radius: 50%;
+    /* Shapes adjacent elements to follow the image's circular outline */
+    shape-outside: circle();
+}
+
+p {
+    /* clear: right; this property ensures the element does not wrap around floated elements on the right */
+    font-family: Arial, Helvetica, sans-serif;
+}
